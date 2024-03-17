@@ -1,6 +1,6 @@
 .GuidesDetailsDiv {
     border-radius: 5px;
-    width: 40%;
+    width: 35%;
     box-shadow: 0 0 5px black;
     display: inline-block;
     margin: 20px;
@@ -12,7 +12,7 @@
     white-space: pre-wrap;
     padding: 0 10px 0 10px;
     font-family: "Roboto", sans-serif;
-    font-size: 2vw;
+    font-size: 20px;
 }
 
 .GuidesInfo {
@@ -22,7 +22,7 @@
 }
 
 .GuidesImage {
-    width: 15vw;
+    width: 90px;
     border-radius: 50%;
     margin: 5px 0 0 5px;
 }
@@ -41,6 +41,7 @@
     margin-bottom: 0;
     font-weight: bold;
     white-space: pre-wrap;
+    font-size: 25px;
 }
 
 .GuidesNameAndLocation p:nth-child(2) {
@@ -48,7 +49,7 @@
     margin-bottom: 0;
     font-weight: bold;
     color: rgb(131, 131, 131);
-    font-size: 1.7vw;
+    font-size: 20px;
     white-space: pre-wrap;
 }
 
@@ -56,6 +57,28 @@
     margin-top: 2px;
     margin-bottom: 0px;
     font-size: 13px;
+}
+
+@media (max-width:920px) {
+    .GuidesDetailsDiv {
+        width: 40%;
+    }
+
+    .GuidesDiscription {
+        font-size: 2vw;
+    }
+
+    .GuidesImage {
+        width: 15vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(1) {
+        font-size: 2vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(2) {
+        font-size: 1.7vw;
+    }
 }
 
 @media (max-width:500px) {

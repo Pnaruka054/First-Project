@@ -3,6 +3,8 @@ import React, { useRef } from 'react';
 import HotelsDetails from './HotelsDetails'
 
 function Hotels() {
+    const scroll1Ref = useRef(null);
+
     function showButton() {
         if (scroll1Ref.current.scrollLeft >= 200) {
             let leftButton = document.querySelector('#HotelsReftButton')
@@ -22,7 +24,6 @@ function Hotels() {
         leftButton.classList = 'HotelsLeftContent'
     }
 
-    const scroll1Ref = useRef(null);
     function scrollRight() {
         scroll1Ref.current.scrollBy({
             left: 550,

@@ -16,7 +16,7 @@
 }
 
 .NavBarImageDiv img{
-    width: 20vw;
+    width: 10vw;
 }
 
 .NavBarUlliDiv {
@@ -69,6 +69,78 @@
     display: none;
 }
 
+@media (max-width:920px){
+.NavBarDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 70px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+.NavBarImageDiv {
+    padding-left: 10px;
+}
+
+.NavBarImageDiv img{
+    width: 20vw;
+}
+
+.NavBarUlliDiv {
+    width: 30vw;
+    font-size: 20px;
+}
+
+.NavBarUlliDiv ul:nth-child(1) {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.NavBarUlliDiv ul li {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.NavBarUlliDiv ul li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.NavBarUlliDiv ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.NavBarCallEmail div:nth-child(1) i,
+.NavBarCallEmail div:nth-child(2) i {
+    padding-right: 10px;
+}
+
+.NavBarCallEmail div:nth-child(1) a,
+.NavBarCallEmail div:nth-child(2) a {
+    text-decoration: none;
+    color: black;
+}
+
+.NavBarMenu {
+    display: none;
+}
+
+.NavBarCallEmailMobile {
+    display: none;
+}
+
+.NavBarUlliDivMobile {
+    display: none;
+}
+}
 
 @media (max-width: 800px) {
     .NavBarCallEmail {

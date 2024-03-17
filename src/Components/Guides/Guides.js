@@ -2,7 +2,9 @@ import './Guides.css'
 import React, { useRef } from 'react';
 import GuidesDetails from './GuidesDetails';
 
-function Guides(){
+function Guides() {
+    const scroll1Ref = useRef(null);
+
     function showButton() {
         if (scroll1Ref.current.scrollLeft >= 200) {
             let leftButton = document.querySelector('#GuidesReftButton')
@@ -22,7 +24,6 @@ function Guides(){
         leftButton.classList = 'GuidesLeftContent'
     }
 
-    const scroll1Ref = useRef(null);
     function scrollRight() {
         scroll1Ref.current.scrollBy({
             left: 550,
@@ -59,23 +60,23 @@ function Guides(){
             rightButton.classList = 'GuidesRightContent'
         }
     }
-    return(
+    return (
         <div id='Guides' className='GuidesHeaderMainDiv'>
-        <div className='GuidesHeaderDiv'>
-            <h1>Recommended Guides</h1>
-        </div>
-        <div className='GuidesContentDivParant'>
-            <div className='GuidesContentDiv' ref={scroll1Ref} style={{ overflowX: 'auto' }} onMouseEnter={showButton} onMouseLeave={hideButton} onScroll={leftScrolled} >
-                <button id='GuidesLeftButton' className='GuidesLeftContent' onClick={scrollLeft}>
-                    <i className='fa-solid fa-caret-left'></i>
-                </button>
-                <GuidesDetails />
-                <button id='GuidesRightButton' className='GuidesRightContent' onClick={scrollRight} onScroll={rightScrolled}>
-                    <i className='fa-solid fa-caret-right'></i>
-                </button>
+            <div className='GuidesHeaderDiv'>
+                <h1>Recommended Guides</h1>
+            </div>
+            <div className='GuidesContentDivParant'>
+                <div className='GuidesContentDiv' ref={scroll1Ref} style={{ overflowX: 'auto' }} onMouseEnter={showButton} onMouseLeave={hideButton} onScroll={leftScrolled} >
+                    <button id='GuidesLeftButton' className='GuidesLeftContent' onClick={scrollLeft}>
+                        <i className='fa-solid fa-caret-left'></i>
+                    </button>
+                    <GuidesDetails />
+                    <button id='GuidesRightButton' className='GuidesRightContent' onClick={scrollRight} onScroll={rightScrolled}>
+                        <i className='fa-solid fa-caret-right'></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
     )
 }
 
