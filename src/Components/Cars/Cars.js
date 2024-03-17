@@ -70,7 +70,7 @@ function Cars() {
                         <i className='fa-solid fa-caret-left'></i>
                     </button>
                     <CarsDetails />
-                    <button id='rightButton' className='rightContent' onClick={scrollRight} onScroll={rightScrolled}>
+                    <button id='rightButton' className='rightContent' onClick={scrollRight} onScroll={rightScrolled} >
                         <i className='fa-solid fa-caret-right'></i>
                     </button>
                 </div>

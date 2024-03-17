@@ -13,7 +13,10 @@
 
 .NavBarImageDiv {
     padding-left: 10px;
-    font-size: 20px;
+}
+
+.NavBarImageDiv img{
+    width: 20vw;
 }
 
 .NavBarUlliDiv {
@@ -27,18 +30,18 @@
     justify-content: space-around;
 }
 
-.NavBarDiv div li {
+.NavBarUlliDiv ul li {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-radius: 10px;
     padding: 15px;
 }
 
-.NavBarDiv div li:hover {
+.NavBarUlliDiv ul li:hover {
     background-color: rgb(240, 240, 240);
 }
 
-.NavBarDiv div li a {
+.NavBarUlliDiv ul li a {
     text-decoration: none;
     color: black;
 }
@@ -52,4 +55,101 @@
 .NavBarCallEmail div:nth-child(2) a {
     text-decoration: none;
     color: black;
+}
+
+.NavBarMenu {
+    display: none;
+}
+
+.NavBarCallEmailMobile {
+    display: none;
+}
+
+.NavBarUlliDivMobile {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .NavBarCallEmail {
+        display: none;
+    }
+
+    .NavBarMenu {
+        display: block;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .NavBarDiv {
+        height: 50px;
+    }
+
+    .NavBarUlliDiv {
+        display: none;
+    }
+
+    .NavBarCallEmailMobile {
+        display: block;
+        font-size: 2.8vw;
+    }
+
+    .NavBarCallEmailMobile div:nth-child(1) i,
+    .NavBarCallEmailMobile div:nth-child(2) i {
+        padding-right: 10px;
+    }
+
+    .NavBarCallEmailMobile div:nth-child(1) a,
+    .NavBarCallEmailMobile div:nth-child(2) a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .NavBarUlliDivMobile {
+        display: block;
+        position: relative;
+    }
+
+    .NavBarUlliDivMobile ul {
+        list-style-type: none;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        background-color: black;
+        border-radius: 10px;
+        z-index: 3;
+        display: none;
+    }
+
+    .NavBarUlliDivMobile ul li {
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .NavBarUlliDivMobile ul li:hover {
+        background-color: rgb(49, 49, 49);
+    }
+
+    .NavBarUlliDivMobile ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .ShowNavBarUlliDivMobile ul {
+        display: block;
+    }
+
+}
+
+@media (max-width:400px) {
+    .NavBarCallEmailMobile {
+        font-size: 3.5vw;
+    }
+
+    .NavBarImageDiv img{
+        width: 30vw;
+    }
 }

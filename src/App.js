@@ -7,6 +7,7 @@ import Hotels from './Components/Hotels/Hotels';
 import NavBar from './Components/NavBar';
 
 function App() {
+  
   return (
     <div>
       <NavBar />

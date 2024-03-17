@@ -1,6 +1,6 @@
 .GuidesDetailsDiv {
     border-radius: 5px;
-    width: 350px;
+    width: 40%;
     box-shadow: 0 0 5px black;
     display: inline-block;
     margin: 20px;
@@ -8,10 +8,11 @@
     padding: 20px 0;
 }
 
-.GuidesDiscription{
+.GuidesDiscription {
     white-space: pre-wrap;
     padding: 0 10px 0 10px;
     font-family: "Roboto", sans-serif;
+    font-size: 2vw;
 }
 
 .GuidesInfo {
@@ -21,15 +22,13 @@
 }
 
 .GuidesImage {
-    width: 50px;
-    height: 50px;
+    width: 15vw;
     border-radius: 50%;
     margin: 5px 0 0 5px;
 }
 
 .GuidesImage img {
     width: 100%;
-    height: 100%;
     border-radius: 50%;
 }
 
@@ -41,6 +40,7 @@
 .GuidesNameAndLocation p:nth-child(1) {
     margin-bottom: 0;
     font-weight: bold;
+    white-space: pre-wrap;
 }
 
 .GuidesNameAndLocation p:nth-child(2) {
@@ -48,11 +48,36 @@
     margin-bottom: 0;
     font-weight: bold;
     color: rgb(131, 131, 131);
-    font-size: 13px;
+    font-size: 1.7vw;
+    white-space: pre-wrap;
 }
 
 .GuidesNameAndLocation p:nth-child(3) {
     margin-top: 2px;
     margin-bottom: 0px;
     font-size: 13px;
+}
+
+@media (max-width:500px) {
+    .GuidesDetailsDiv {
+        width: 70%;
+    }
+
+    .GuidesDiscription {
+        font-size: 3.5vw;
+    }
+
+    .GuidesImage {
+        width: 17vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(2) {
+        font-size: 3.1vw;
+    }
+}
+
+@media (max-width:400px) {
+    .GuidesDetailsDiv {
+        width: 80%;
+    }
 }

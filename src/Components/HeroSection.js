@@ -11,7 +11,7 @@ function HeroSection() {
             </div>
             <div className='HeroSectionBlackDiv'></div>
             <div className='HeroSectionImageDiv'>
-                <img src='heroimage1.jpg' />
+                <img className='HeroSectionImageDiv' src='heroimage1.jpg' />
             </div>
         </div>
     )

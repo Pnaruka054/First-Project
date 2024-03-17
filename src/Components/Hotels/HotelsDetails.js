@@ -65,7 +65,7 @@ function HotelsDetails() {
                 HotelsDetails.map(
                     (item, i) => (
                         <div key={i} className="HotelsDetailsDiv">
-                            <div className='Image'>
+                            <div className='HotelsImage'>
                                 <img src='./Hotels.jpg' />
                             </div>
                             <div className='HotelsInfo'>

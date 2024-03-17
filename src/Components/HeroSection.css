@@ -1,6 +1,6 @@
 .HeroSectionTextDiv{
     width: 100%;
-    height: 600px;
+    aspect-ratio: 16 / 7;
     border-radius: 20px;
     position: absolute;
     color: white;
@@ -8,14 +8,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 40px;
+    font-size: 4vw;
     font-family: "Roboto", sans-serif;
     z-index: 2;
 }
 
 .HeroSectionBlackDiv{
     width: 100%;
-    height: 600px;
+    height: 100%;
     border-radius: 20px;
     background-color: black;
     opacity: 0.7;
@@ -24,8 +24,8 @@
 }
 
 .HeroSectionImageDiv{
-    height: 600px;
     width: 100%;
+    aspect-ratio: 16 / 7;
     background-color: black;
     border-radius: 20px;
 }

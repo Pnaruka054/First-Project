@@ -4,9 +4,8 @@
 
 .CarsHeaderDiv {
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    margin: auto;
-    width: 400px;
+    font-size: 2.9vw;
+    text-align: center;
 }
 
 .contentDivParant {
@@ -31,12 +30,12 @@
 
 .leftContentShow {
     box-shadow: 0 0 5px black;
-    width: 60px;
-    height: 60px;
+    width: 7vw;
+    height: 7vw;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 4vw;
     position: absolute;
     left: 10px;
     bottom: 42%;
@@ -56,8 +55,8 @@
 
 .rightContentShow {
     box-shadow: 0 0 5px black;
-    width: 60px;
-    height: 60px;
+    width: 7vw;
+    height: 7vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -65,7 +64,7 @@
     position: absolute;
     right: 10px;
     bottom: 42%;
-    font-size: 35px;
+    font-size: 4vw;
     background-color: rgb(233, 233, 233);
     z-index: 0;
 }
