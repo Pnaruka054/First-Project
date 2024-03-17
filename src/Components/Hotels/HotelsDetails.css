@@ -105,91 +105,33 @@
 
 @media (max-width:920px) {
     .HotelsDetailsDiv {
-        border-radius: 10px;
         width: 36%;
-        box-shadow: 0 0 5px black;
-        display: inline-block;
-        transform: scale(1, 1);
-        margin: 20px;
-        cursor: pointer;
-        transition: all 0.2s linear;
+        transform: none;
+        transition: none;
     }
 
     .HotelsDetailsDiv:hover {
-        transform: scale(1.1, 1.1);
-    }
-
-    .HotelsInfo {
-        position: relative;
-    }
-
-    .HotelsName {
-        margin-left: 10px;
-        font-family: "Roboto", sans-serif;
+        transform: none;
     }
 
     .HotelsName p:nth-child(1) {
-        margin-bottom: 0;
-        font-weight: bold;
         font-size: 2.3vw;
-        margin-top: 0px;
-        white-space: pre-wrap;
     }
 
     .HotelsName p:nth-child(2) {
-        margin-bottom: 0;
-        color: rgb(131, 131, 131);
         font-size: 2.1vw;
-        margin-top: 0px;
-        white-space: pre-wrap;
-    }
-
-    .HotelsImage {
-        margin: 5px;
-    }
-
-    .HotelsImage img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .HotelsRatings {
-        display: flex;
-        font-family: "Roboto", sans-serif;
-        align-items: center;
-        margin-bottom: 0px;
     }
 
     .HotelsRatings p:nth-child(1) {
-        border-radius: 5px;
-        background-color: rgb(255, 196, 0);
-        padding: 2px 6px;
-        font-weight: bold;
         font-size: 1.8vw;
-        color: white;
-        margin-left: 10px;
     }
 
     .HotelsRatings p:nth-child(2) {
-        font-weight: bold;
         font-size: 2vw;
-        color: rgb(255, 196, 0);
-        margin-left: 10px;
     }
 
     .HotelsRatings p:nth-child(3) {
         font-size: 2vw;
-        color: rgb(75, 75, 75);
-        margin-left: 2vw;
-    }
-
-    .HotelsPrice {
-        font-family: "Roboto", sans-serif;
-        margin-left: 10px;
-    }
-
-    .HotelsPrice div:nth-child(1) {
-        display: flex;
     }
 
     .HotelsPrice div:nth-child(1) p:nth-child(1) {
@@ -198,15 +140,6 @@
 
     .HotelsPrice div:nth-child(1) p:nth-child(2) {
         font-size: 2.6vw;
-        margin-left: 5px;
-        font-weight: bold;
-        color: rgb(48, 48, 48);
-    }
-
-    .HotelsPrice div:nth-child(2) {
-        font-weight: bold;
-        color: rgb(54, 54, 54);
-        margin-bottom: 10px;
     }
 }
 
