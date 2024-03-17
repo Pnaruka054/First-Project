@@ -22,11 +22,11 @@ function NavBar() {
                 <div className='NavBarCallEmailMobile'>
                     <div>
                         <i className="fa-regular fa-phone"></i>
-                        <a href='#'>+91 9351130765</a>
+                        <a href='tel:+91 9351130765'>+91 9351130765</a>
                     </div>
                     <div>
                         <i className="fa-regular fa-envelope"></i>
-                        <a href='#'>lksdhfosdfs@gmail.com</a>
+                        <a href='mainto:lksdhfosdfs@gmail.com'>lksdhfosdfs@gmail.com</a>
                     </div>
                 </div>
                 <div className='NavBarUlliDiv'>
