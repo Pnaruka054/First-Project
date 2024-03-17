@@ -1,0 +1,106 @@
+.HotelsDetailsDiv {
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    transform: scale(1, 1);
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.HotelsDetailsDiv:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.HotelsInfo {
+    position: relative;
+}
+
+.HotelsName {
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.HotelsName p:nth-child(1) {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.HotelsName p:nth-child(2) {
+    margin-bottom: 0;
+    color: rgb(131, 131, 131);
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.Image {
+    height: 200px;
+    margin: 5px;
+}
+
+.Image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.HotelsRatings {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.HotelsRatings p:nth-child(1) {
+    border-radius: 5px;
+    background-color: rgb(255, 196, 0);
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+.HotelsRatings p:nth-child(2) {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(255, 196, 0);
+    margin-left: 10px;
+}
+
+.HotelsRatings p:nth-child(3) {
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    margin-left: 10px;
+}
+
+.HotelsPrice {
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+}
+
+.HotelsPrice div:nth-child(1) {
+    display: flex;
+    height: 30px;
+}
+
+.HotelsPrice div:nth-child(1) p:nth-child(1) {
+    font-size: 15px;
+}
+
+.HotelsPrice div:nth-child(1) p:nth-child(2) {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+}
+
+.HotelsPrice div:nth-child(2) {
+    height: 30px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+}
