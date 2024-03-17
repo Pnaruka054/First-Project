@@ -40,6 +40,11 @@
     .HeroSectionTextDiv {
         aspect-ratio: 16 / 9;
         font-size: 4vw;
+        border-radius: 0px;
+    }
+
+    .HeroSectionBlackDiv {
+        border-radius: 0px;
     }
 
     .HeroSectionImageDiv {
@@ -51,7 +56,13 @@
     .HeroSectionTextDiv {
         aspect-ratio: 16 / 10;
         font-size: 4vw;
+        border-radius: 0px;
     }
+
+    .HeroSectionBlackDiv {
+        border-radius: 0px;
+    }
+
 
     .HeroSectionImageDiv {
         aspect-ratio: 16 / 10;
@@ -62,7 +73,13 @@
     .HeroSectionTextDiv {
         aspect-ratio: 16 / 11;
         font-size: 4vw;
+        border-radius: 0px;
     }
+
+    .HeroSectionBlackDiv {
+        border-radius: 0px;
+    }
+
 
     .HeroSectionImageDiv {
         aspect-ratio: 16 / 11;
