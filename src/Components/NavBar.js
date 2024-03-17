@@ -26,7 +26,7 @@ function NavBar() {
                     </div>
                     <div>
                         <i className="fa-regular fa-envelope"></i>
-                        <a href='mainto:lksdhfosdfs@gmail.com'>lksdhfosdfs@gmail.com</a>
+                        <a href='mailto:lksdhfosdfs@gmail.com'>lksdhfosdfs@gmail.com</a>
                     </div>
                 </div>
                 <div className='NavBarUlliDiv'>
