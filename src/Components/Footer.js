@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div className='Footer'>
             <div className='FooterTop'>
-                <img src='logo.png' />
+                <img src='logo1.png' />
             </div>
             <div className='FooterBottomDiv'>
                 <p>Morbi convallis bibendum urna ut viverra. Maecenas consequat</p>
