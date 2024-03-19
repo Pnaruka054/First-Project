@@ -22,4 +22,15 @@
     text-align: center;
     font-family: "Roboto", sans-serif;
     color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterBottomDiv a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+.FooterBottomDiv a:hover {
+    text-decoration: underline;
 }

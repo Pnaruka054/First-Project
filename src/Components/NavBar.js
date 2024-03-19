@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import './NavBar.css'
 
 function NavBar() {
@@ -6,7 +5,7 @@ function NavBar() {
         <div>
             <div className='NavBarDiv'>
                 <div className='NavBarImageDiv'>
-                    <img src='./Logo.png' />
+                    <a href='./'><img src='./Logo.png' alt='Website Logo' /></a>
                 </div>
                 <div className='NavBarUlliDiv'>
                     <ul>

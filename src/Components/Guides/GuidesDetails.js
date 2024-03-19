@@ -67,7 +67,7 @@ function GuidesDetails() {
                         <div key={i} className="GuidesDetailsDiv">
                             <div className='GuidesInfo'>
                                 <div className='GuidesImage'>
-                                    <img src={item.GuidesImage} />
+                                    <img src={item.GuidesImage} alt='Guide Image'/>
                                 </div>
                                 <div className='GuidesNameAndLocation'>
                                     <p>{item.GuidesName}</p>

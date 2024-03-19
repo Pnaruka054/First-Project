@@ -55,7 +55,7 @@ function CarsDetails() {
                     (item, i) => (
                         <div key={i} className="CarsDetailsDiv">
                             <div className='Image'>
-                                <img src={item.CarsImages} />
+                                <img src={item.CarsImages} alt='Cars Image'/>
                             </div>
                             <div className='CarsInfo'>
                                 <div className='CarsName'>

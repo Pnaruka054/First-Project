@@ -4,13 +4,12 @@ function Footer() {
     return (
         <div className='Footer'>
             <div className='FooterTop'>
-                <img src='./Logo.png' />
+                <a href='./'><img src='./Logo.png' alt='Website Logo' /></a>
             </div>
             <div className='FooterBottomDiv'>
-                <p>Morbi convallis bibendum urna ut viverra. Maecenas consequat</p>
-                <p>3015 Grand Ave, Coconut Grove, Cerrick Way, FL 12345</p>
-                <p>+91 9351585149</p>
-                <p>Penkcitytourandtravel@gmail.com</p>
+                <p>Kakriya ki Dhani toda meena th.jamwaramgragh dist. Jaipur Rajasthan</p>
+                <a href='tel:+91 9351585149'>+91 9351585149</a>
+                <a href='mailto:Pinkcityjaipurtourandtravelsra@gmail.com'>Pinkcityjaipurtourandtravelsra@gmail.com</a>
             </div>
         </div>
     )

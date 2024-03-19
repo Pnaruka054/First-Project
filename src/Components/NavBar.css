@@ -164,6 +164,26 @@
     }
 
     .NavBarImageDiv img {
-        width: 30vw;
+        width: 28vw;
+    }
+}
+
+@media (max-width:300px) {
+
+    .NavBarCallEmail div:nth-child(1) i,
+    .NavBarCallEmail div:nth-child(2) i {
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    .NavBarCallEmail div:nth-child(1) a,
+    .NavBarCallEmail div:nth-child(2) a {
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+
+    .NavBarImageDiv img {
+        width: 21vw;
     }
 }
