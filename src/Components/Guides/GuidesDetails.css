@@ -222,15 +222,19 @@
     }
 
     .GuidesExperienceFirstDiv {
-        font-size: 15vw;
+        font-size: 10vw;
+    }
+
+    .GuidesExperienceSecoundDiv{
+        margin-bottom: 10px;
     }
 
     .GuidesExperienceSecoundDiv div:nth-child(1) {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     .GuidesExperienceSecoundDiv div:nth-child(2) {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     .GuidesLanguage {

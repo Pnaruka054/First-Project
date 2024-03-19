@@ -2,32 +2,11 @@ import { useEffect } from 'react'
 import './NavBar.css'
 
 function NavBar() {
-    function ShowNavBarUlliDivMobileScroll() {
-        let NavBarUlliDivMobile = document.getElementById('ShowNavBarUlliDivMobile')
-        NavBarUlliDivMobile.classList.remove('ShowNavBarUlliDivMobile')
-    }
-
-    document.addEventListener('scroll', ShowNavBarUlliDivMobileScroll)
-
-    function ShowNavBarUlliDivMobile() {
-        let NavBarUlliDivMobile = document.getElementById('ShowNavBarUlliDivMobile')
-        NavBarUlliDivMobile.classList.add('ShowNavBarUlliDivMobile')
-    }
     return (
         <div>
             <div className='NavBarDiv'>
                 <div className='NavBarImageDiv'>
                     <img src='logo.png' />
-                </div>
-                <div className='NavBarCallEmailMobile'>
-                    <div>
-                        <i className="fa-regular fa-phone"></i>
-                        <a href='tel:+91 9351585149'>+91 9351585149</a>
-                    </div>
-                    <div>
-                        <i className="fa-regular fa-envelope"></i>
-                        <a href='mailto:Penkcitytourandtravel@gmail.com'>Penkcitytourandtravel@gmail.com</a>
-                    </div>
                 </div>
                 <div className='NavBarUlliDiv'>
                     <ul>
@@ -46,16 +25,6 @@ function NavBar() {
                         <a href='mailto:Penkcitytourandtravel@gmail.com'>Penkcitytourandtravel@gmail.com</a>
                     </div>
                 </div>
-                <div className='NavBarMenu'>
-                    <i className="fa-solid fa-bars" onClick={ShowNavBarUlliDivMobile}></i>
-                </div>
-            </div>
-            <div className='NavBarUlliDivMobile' id='ShowNavBarUlliDivMobile'>
-                <ul>
-                    <li><a href='#Hotels'>Hotals</a></li>
-                    <li><a href='#Cars'>Cars</a></li>
-                    <li><a href='#Guides'>Guids</a></li>
-                </ul>
             </div>
         </div>
     )
