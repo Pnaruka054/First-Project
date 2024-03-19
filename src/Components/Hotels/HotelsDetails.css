@@ -3,7 +3,6 @@
     width: 28%;
     box-shadow: 0 0 5px black;
     display: inline-block;
-    transform: scale(1, 1);
     margin: 20px;
     cursor: pointer;
     transition: all 0.2s linear;
@@ -20,22 +19,37 @@
 .HotelsName {
     margin-left: 10px;
     font-family: "Roboto", sans-serif;
+    text-overflow:ellipsis;
+    overflow: hidden;
 }
 
-.HotelsName p:nth-child(1) {
+.HotelsName div:nth-child(1) {
     margin-bottom: 0;
     font-weight: bold;
     font-size: 20px;
     margin-top: 0px;
-    white-space: pre-wrap;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
 }
 
-.HotelsName p:nth-child(2) {
+.HotelsName div:nth-child(2){
+    text-overflow:ellipsis;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.HotelsLocationLink {
     margin-bottom: 0;
     color: rgb(131, 131, 131);
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 0px;
-    white-space: pre-wrap;
+    white-space: nowrap; 
+    text-decoration: none;
+}
+
+.HotelsLocationLink:hover {
+    text-decoration: underline;
 }
 
 .HotelsImage {
@@ -51,7 +65,8 @@
     display: flex;
     font-family: "Roboto", sans-serif;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .HotelsRatings p:nth-child(1) {
@@ -77,32 +92,6 @@
     margin-left: 10px;
 }
 
-.HotelsPrice {
-    font-family: "Roboto", sans-serif;
-    margin-left: 10px;
-}
-
-.HotelsPrice div:nth-child(1) {
-    display: flex;
-}
-
-.HotelsPrice div:nth-child(1) p:nth-child(1) {
-    font-size: 20px;
-}
-
-.HotelsPrice div:nth-child(1) p:nth-child(2) {
-    font-size: 23px;
-    margin-left: 5px;
-    font-weight: bold;
-    color: rgb(48, 48, 48);
-}
-
-.HotelsPrice div:nth-child(2) {
-    font-weight: bold;
-    color: rgb(54, 54, 54);
-    margin-bottom: 10px;
-}
-
 @media (max-width:920px) {
     .HotelsDetailsDiv {
         width: 36%;
@@ -114,11 +103,11 @@
         transform: none;
     }
 
-    .HotelsName p:nth-child(1) {
+    .HotelsName div:nth-child(1) {
         font-size: 2.3vw;
     }
 
-    .HotelsName p:nth-child(2) {
+    .HotelsLocationLink {
         font-size: 2.1vw;
     }
 
@@ -133,14 +122,6 @@
     .HotelsRatings p:nth-child(3) {
         font-size: 2vw;
     }
-
-    .HotelsPrice div:nth-child(1) p:nth-child(1) {
-        font-size: 2.2vw;
-    }
-
-    .HotelsPrice div:nth-child(1) p:nth-child(2) {
-        font-size: 2.6vw;
-    }
 }
 
 @media (max-width:500px) {
@@ -148,11 +129,11 @@
         width: 52%;
     }
 
-    .HotelsName p:nth-child(1) {
+    .HotelsName div:nth-child(1) {
         font-size: 4.5vw;
     }
 
-    .HotelsName p:nth-child(2) {
+    .HotelsLocationLink {
         font-size: 3.4vw;
     }
 
@@ -166,14 +147,6 @@
 
     .HotelsRatings p:nth-child(3) {
         font-size: 3.2vw;
-    }
-
-    .HotelsPrice div:nth-child(1) p:nth-child(1) {
-        font-size: 3.5vw;
-    }
-
-    .HotelsPrice div:nth-child(1) p:nth-child(2) {
-        font-size: 4.4vw;
     }
 }
 

@@ -22,11 +22,11 @@ function NavBar() {
                 <div className='NavBarCallEmailMobile'>
                     <div>
                         <i className="fa-regular fa-phone"></i>
-                        <a href='tel:+91 9351130765'>+91 9351130765</a>
+                        <a href='tel:+91 9351585149'>+91 9351585149</a>
                     </div>
                     <div>
                         <i className="fa-regular fa-envelope"></i>
-                        <a href='mailto:lksdhfosdfs@gmail.com'>lksdhfosdfs@gmail.com</a>
+                        <a href='mailto:Penkcitytourandtravel@gmail.com'>Penkcitytourandtravel@gmail.com</a>
                     </div>
                 </div>
                 <div className='NavBarUlliDiv'>
@@ -39,11 +39,11 @@ function NavBar() {
                 <div className='NavBarCallEmail'>
                     <div>
                         <i className="fa-regular fa-phone"></i>
-                        <a href='#'>+91 9351130765</a>
+                        <a href='tel:+91 9351585149'>+91 9351585149</a>
                     </div>
                     <div>
                         <i className="fa-regular fa-envelope"></i>
-                        <a href='#'>lksdhfosdfs@gmail.com</a>
+                        <a href='mailto:Penkcitytourandtravel@gmail.com'>Penkcitytourandtravel@gmail.com</a>
                     </div>
                 </div>
                 <div className='NavBarMenu'>

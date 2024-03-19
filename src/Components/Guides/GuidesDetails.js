@@ -3,39 +3,60 @@ import './GuidesDetails.css'
 function GuidesDetails() {
     const GuidesDetails = [
         {
-            GuidesName: 'Best Western Grant Park Hotel',
-            GuidesLocation: '124 E Huron St, Chicago',
-            GuidesDiscription: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.',
+            GuidesName: 'Girraj Gurjar',
+            GuidesLocation: 'Jaipur',
+            GuidesLanguage: 'Hindi And English',
             RatingsNumber: '⭐⭐⭐⭐⭐',
-            GuidesImage: 'man1.png'
+            GuidesImage: './GuidesImages/Girraj Gurjar.jpg',
+            GuidesExperience: 5
         },
         {
-            GuidesName: 'Best Western Grant Park Hotel',
-            GuidesLocation: '124 E Huron St, Chicago',
-            GuidesDiscription: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.',
+            GuidesName: 'Suresh Meena',
+            GuidesLocation: 'Jaipur',
+            GuidesLanguage: 'Hindi And English',
             RatingsNumber: '⭐⭐⭐⭐⭐',
-            GuidesImage: 'man1.png'
+            GuidesImage: './GuidesImages/Suresh Meena.jpg',
+            GuidesExperience: 5
         },
         {
-            GuidesName: 'Best Western Grant Park Hotel',
-            GuidesLocation: '124 E Huron St, Chicago',
-            GuidesDiscription: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.',
+            GuidesName: 'Hemraj Gurjar',
+            GuidesLocation: 'Jaipur',
+            GuidesLanguage: 'Hindi',
             RatingsNumber: '⭐⭐⭐⭐⭐',
-            GuidesImage: 'man1.png'
+            GuidesImage: './GuidesImages/Hemraj Gurjar.jpg',
+            GuidesExperience: 5
         },
         {
-            GuidesName: 'Best Western Grant Park Hotel',
-            GuidesLocation: '124 E Huron St, Chicago',
-            GuidesDiscription: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.',
+            GuidesName: 'Amer Singh Gurjar',
+            GuidesLocation: 'Jaipur',
+            GuidesLanguage: 'Hindi',
             RatingsNumber: '⭐⭐⭐⭐⭐',
-            GuidesImage: 'man1.png'
+            GuidesImage: './GuidesImages/Amer Singh Gurjar.jpg',
+            GuidesExperience: 5
         },
         {
-            GuidesName: 'Best Western Grant Park Hotel',
-            GuidesLocation: '124 E Huron St, Chicago',
-            GuidesDiscription: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.',
+            GuidesName: 'Amer Singh Gurjar',
+            GuidesLocation: 'Jaipur',
+            GuidesLanguage: 'Hindi',
             RatingsNumber: '⭐⭐⭐⭐⭐',
-            GuidesImage: 'man1.png'
+            GuidesImage: './GuidesImages/Amer Singh Gurjar.jpg',
+            GuidesExperience: 5
+        },
+        {
+            GuidesName: 'Rohit Raj Meena',
+            GuidesLocation: 'Jaipur',
+            GuidesLanguage: 'Hindi',
+            RatingsNumber: '⭐⭐⭐⭐⭐',
+            GuidesImage: './GuidesImages/Rohit Raj Meena.jpg',
+            GuidesExperience: 2
+        },
+        {
+            GuidesName: 'Shyam Singh Chouhan',
+            GuidesLocation: 'Jaipur',
+            GuidesLanguage: 'Hindi And English',
+            RatingsNumber: '⭐⭐⭐⭐⭐',
+            GuidesImage: './GuidesImages/Shyam Singh Chouhan.jpg',
+            GuidesExperience: 5
         }
     ]
     return (
@@ -44,9 +65,6 @@ function GuidesDetails() {
                 GuidesDetails.map(
                     (item, i) => (
                         <div key={i} className="GuidesDetailsDiv">
-                            <div className='GuidesDiscription'>
-                                <p>{item.GuidesDiscription}</p>
-                            </div>
                             <div className='GuidesInfo'>
                                 <div className='GuidesImage'>
                                     <img src={item.GuidesImage} />
@@ -56,6 +74,18 @@ function GuidesDetails() {
                                     <p>{item.GuidesLocation}</p>
                                     <p>{item.RatingsNumber}</p>
                                 </div>
+                                <div className='GuidesExperience'>
+                                    <div className='GuidesExperienceFirstDiv'>
+                                        <p>{item.GuidesExperience}</p>
+                                    </div>
+                                    <div className='GuidesExperienceSecoundDiv'>
+                                        <div>Years +</div>
+                                        <div>Experience</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='GuidesLanguage'>
+                                <p>Language - {item.GuidesLanguage}</p>
                             </div>
                         </div>
                     )
