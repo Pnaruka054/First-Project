@@ -17,9 +17,7 @@ function HeroSection() {
                 break;
             case ('./HeroImages/Hero6.jpg'): HeroImageTarget.src = './HeroImages/Hero7.jpg'
                 break;
-            case ('./HeroImages/Hero7.jpg'): HeroImageTarget.src = './HeroImages/Hero8.jpg'
-                break;
-            case ('./HeroImages/Hero8.jpg'): HeroImageTarget.src = './HeroImages/Hero1.jpeg'
+            case ('./HeroImages/Hero7.jpg'): HeroImageTarget.src = './HeroImages/Hero1.jpeg'
                 break;
             default: console.log('error')
         }
