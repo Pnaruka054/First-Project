@@ -49,14 +49,17 @@ function CarsDetails() {
         },
     ]
 
-    function StopAnim() {
-        if (document.getElementById('sliderId').classList.value == 'slider') {
-            document.getElementById('sliderId').removeAttribute('class')
+    let transformValue = 5
+
+    function StopCarsAnim() {
+        let slider = document.getElementById('CarsSliderId');
+        if (slider.classList.contains('CarsSlider')) {
+            slider.classList.remove('CarsSlider');
         }
     }
 
     return (
-        <div id='sliderId' className='slider' onClick={StopAnim}>
+        <div id='CarsSliderId' className='CarsSlider' onClick={StopCarsAnim} >
             {
                 CarsDetails.map(
                     (item, i) => (

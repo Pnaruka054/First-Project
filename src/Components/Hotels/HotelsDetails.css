@@ -19,7 +19,7 @@
 .HotelsName {
     margin-left: 10px;
     font-family: "Roboto", sans-serif;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
@@ -29,12 +29,12 @@
     font-size: 20px;
     margin-top: 0px;
     white-space: nowrap;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.HotelsName div:nth-child(2){
-    text-overflow:ellipsis;
+.HotelsName div:nth-child(2) {
+    text-overflow: ellipsis;
     overflow: hidden;
     margin-right: 10px;
 }
@@ -44,7 +44,7 @@
     color: rgb(131, 131, 131);
     font-size: 20px;
     margin-top: 0px;
-    white-space: nowrap; 
+    white-space: nowrap;
     text-decoration: none;
 }
 
@@ -90,6 +90,20 @@
     font-size: 20px;
     color: rgb(75, 75, 75);
     margin-left: 10px;
+}
+
+.HotelsSlider {
+    animation: HotelsScroll 6s linear infinite alternate;
+}
+
+@keyframes HotelsScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 1));
+    }
 }
 
 @media (max-width:920px) {

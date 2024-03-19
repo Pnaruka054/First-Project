@@ -35,14 +35,6 @@ function GuidesDetails() {
             GuidesExperience: 5
         },
         {
-            GuidesName: 'Amer Singh Gurjar',
-            GuidesLocation: 'Jaipur',
-            GuidesLanguage: 'Hindi',
-            RatingsNumber: '⭐⭐⭐⭐⭐',
-            GuidesImage: './GuidesImages/Amer Singh Gurjar.jpg',
-            GuidesExperience: 5
-        },
-        {
             GuidesName: 'Rohit Raj Meena',
             GuidesLocation: 'Jaipur',
             GuidesLanguage: 'Hindi',
@@ -59,15 +51,23 @@ function GuidesDetails() {
             GuidesExperience: 5
         }
     ]
+
+    function StopGuidesAnim() {
+        let slider = document.getElementById('GuidesSliderId');
+        if (slider.classList.contains('GuidesSlider')) {
+            slider.classList.remove('GuidesSlider');
+        }
+    }
+
     return (
-        <div>
+        <div id='GuidesSliderId' className='GuidesSlider' onClick={StopGuidesAnim}>
             {
                 GuidesDetails.map(
                     (item, i) => (
                         <div key={i} className="GuidesDetailsDiv">
                             <div className='GuidesInfo'>
                                 <div className='GuidesImage'>
-                                    <img src={item.GuidesImage} alt='Guide'/>
+                                    <img src={item.GuidesImage} alt='Guide' />
                                 </div>
                                 <div className='GuidesNameAndLocation'>
                                     <p>{item.GuidesName}</p>

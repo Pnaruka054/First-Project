@@ -29,68 +29,9 @@
     display: none;
 }
 
-.HotelsLeftContentShow {
-    box-shadow: 0 0 5px black;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    position: absolute;
-    left: 10px;
-    bottom: 42%;
-    background-color: rgb(233, 233, 233);
-    z-index: 1;
-}
-
-.HotelsLeftContentShow:hover {
-    background-color: rgb(211, 211, 211);
-    color: rgb(0, 0, 0);
-}
-
-
-.HotelsRightContent {
-    display: none;
-}
-
-.HotelsRightContentShow {
-    box-shadow: 0 0 5px black;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 10px;
-    bottom: 42%;
-    font-size: 40px;
-    background-color: rgb(233, 233, 233);
-    z-index: 0;
-}
-
-.HotelsRightContentShow:hover {
-    background-color: rgb(211, 211, 211);
-    color: rgb(0, 0, 0);
-    ;
-}
-
 @media (max-width:920px) {
     .HotelsHeaderDiv {
         font-size: 2.9vw;
-    }
-
-    .HotelsLeftContentShow {
-        width: 7vw;
-        height: 7vw;
-        font-size: 4vw;
-    }
-
-    .HotelsRightContentShow {
-        width: 7vw;
-        height: 7vw;
-        font-size: 4vw;
     }
 }
 

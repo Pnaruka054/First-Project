@@ -118,11 +118,11 @@
     text-decoration: underline;
 }
 
-.slider {
-    animation: scroll 6s linear infinite alternate;
+.CarsSlider {
+    animation: CarsScroll 6s linear infinite alternate;
 }
 
-@keyframes scroll {
+@keyframes CarsScroll {
     0% {
         transform: translateX(0);
     }

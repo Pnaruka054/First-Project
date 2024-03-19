@@ -11,7 +11,7 @@ function NavBar() {
                     <ul>
                         <li><a href='#Hotels'>Hotals</a></li>
                         <li><a href='#Cars'>Cars</a></li>
-                        <li><a href='#Guids'>Guids</a></li>
+                        <li><a href='#Guides'>Guids</a></li>
                     </ul>
                 </div>
                 <div className='NavBarCallEmail'>

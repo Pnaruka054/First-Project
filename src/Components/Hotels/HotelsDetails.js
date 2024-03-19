@@ -35,8 +35,16 @@ function HotelsDetails() {
             Reviews: '625',
         },
     ]
+
+    function StopHotelsAnim() {
+        let slider = document.getElementById('HotelsSliderId');
+        if (slider.classList.contains('HotelsSlider')) {
+            slider.classList.remove('HotelsSlider');
+        }
+    }
+
     return (
-        <div>
+        <div id='HotelsSliderId' className='HotelsSlider' onClick={StopHotelsAnim}>
             {
                 HotelsDetails.map(
                     (item, i) => (
