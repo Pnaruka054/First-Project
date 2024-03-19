@@ -42,7 +42,7 @@ function HotelsDetails() {
                     (item, i) => (
                         <div key={i} className="HotelsDetailsDiv">
                             <div className='HotelsImage'>
-                                <img src={item.HotelsPhotos} alt='Hotel Image' />
+                                <img src={item.HotelsPhotos} alt='Hotel' />
                             </div>
                             <div className='HotelsInfo'>
                                 <div className='HotelsName'>

@@ -22,7 +22,7 @@ function NavBar() {
                     <div>
                         <i className="fa-regular fa-envelope"></i>
                         <a href='mailto:Pinkcityjaipurtourandtravelsra@gmail.com'>Pinkcityjaipurtourandtravelsra@gmail.com</a>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
