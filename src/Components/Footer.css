@@ -31,7 +31,7 @@
 .FooterBottomDiv a {
     text-decoration: underline;
     color: rgb(202, 202, 202);
-    font-size: 3.7vw;
+    font-size: 14px;
 }
 
 .FooterBottomDiv i {
@@ -40,7 +40,7 @@
 
 .FooterBottomDiv p {
     padding-bottom: 10px;
-    font-size: 4vw;
+    font-size: 16px;
 }
 
 .FooterCopyright {
