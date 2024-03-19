@@ -12,7 +12,7 @@
 }
 
 .NavBarImageDiv {
-    padding-left: 10px;
+    margin-left: 0px;
 }
 
 .NavBarImageDiv img {
@@ -46,7 +46,7 @@
     color: black;
 }
 
-.NavBarCallEmail{
+.NavBarCallEmail {
     margin-right: 10px;
 }
 
@@ -151,6 +151,14 @@
 }
 
 @media (max-width:400px) {
+    .NavBarImageDiv {
+        margin-left: -10px;
+    }
+
+    .NavBarImageDiv img {
+        width: 15vw;
+    }
+
     .NavBarCallEmailMobile {
         font-size: 3.5vw;
     }

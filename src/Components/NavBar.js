@@ -6,7 +6,7 @@ function NavBar() {
         <div>
             <div className='NavBarDiv'>
                 <div className='NavBarImageDiv'>
-                    <img src='logo.png' />
+                    <img src='logo.svg' />
                 </div>
                 <div className='NavBarUlliDiv'>
                     <ul>
@@ -22,7 +22,7 @@ function NavBar() {
                     </div>
                     <div>
                         <i className="fa-regular fa-envelope"></i>
-                        <a href='mailto:Penkcitytourandtravel@gmail.com'>Penkcitytourandtravel@gmail.com</a>
+                        <a href='mailto:Pinkcityjaipurtourandtravelsra@gmail.com'>Pinkcityjaipurtourandtravelsra@gmail.com</a>
                     </div>
                 </div>
             </div>
