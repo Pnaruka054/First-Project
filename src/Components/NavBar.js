@@ -6,7 +6,7 @@ function NavBar() {
         <div>
             <div className='NavBarDiv'>
                 <div className='NavBarImageDiv'>
-                    <img src='logo.svg' />
+                    <img src='logo.png' />
                 </div>
                 <div className='NavBarUlliDiv'>
                     <ul>
