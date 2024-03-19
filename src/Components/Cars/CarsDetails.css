@@ -118,6 +118,20 @@
     text-decoration: underline;
 }
 
+.slider {
+    animation: scroll 6s linear infinite alternate;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 2));
+    }
+}
+
 @media (max-width:920px) {
     .CarsDetailsDiv:hover {
         transform: none;

@@ -54,3 +54,14 @@
     text-decoration: underline;
     color: rgb(161, 161, 161);
 }
+
+.WhatsAppLogo{
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.WhatsAppLogo img{
+    width: 80px;
+}

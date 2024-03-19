@@ -48,14 +48,21 @@ function CarsDetails() {
             CarsMobileNumber: '9351585149'
         },
     ]
+
+    function StopAnim() {
+        if (document.getElementById('sliderId').classList.value == 'slider') {
+            document.getElementById('sliderId').removeAttribute('class')
+        }
+    }
+
     return (
-        <div>
+        <div id='sliderId' className='slider' onClick={StopAnim}>
             {
                 CarsDetails.map(
                     (item, i) => (
                         <div key={i} className="CarsDetailsDiv">
                             <div className='Image'>
-                                <img src={item.CarsImages} alt='Cars'/>
+                                <img src={item.CarsImages} alt='Cars' />
                             </div>
                             <div className='CarsInfo'>
                                 <div className='CarsName'>
@@ -79,7 +86,7 @@ function CarsDetails() {
                                 <div className='CarsMobileNumber'>
                                     <div>
                                         <i className="fa-solid fa-phone"></i>
-                                        <a href={'tel:'+ item.CarsMobileNumber}> +91 {item.CarsMobileNumber}</a>
+                                        <a href={'tel:' + item.CarsMobileNumber}> +91 {item.CarsMobileNumber}</a>
                                     </div>
                                 </div>
                             </div>

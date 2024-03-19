@@ -14,6 +14,11 @@ function Footer() {
             <div className='FooterCopyright'>
                 <p>© 2024 Site Owner, Inc. <a href='./'>All rights reserved.</a></p>
             </div>
+            <div className='WhatsAppLogo'>
+                <a href='https://wa.link/nma7gi'>
+                    <img src='./WhatsAppLogo.webp' alt='Whatsapp' />
+                </a>
+            </div>
         </div>
     )
 }
