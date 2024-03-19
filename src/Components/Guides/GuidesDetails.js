@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import './GuidesDetails.css'
 
 function GuidesDetails() {
@@ -52,15 +53,49 @@ function GuidesDetails() {
         }
     ]
 
+    let GuidesComponents = useRef(null)
+
+    function ApplyGuidesAnimation() {
+        const GuidesSlider = document.querySelector('.GuidesSlider');
+        const GuidesAnimationDuration = `${GuidesComponents.current.children.length * 2 }s`;
+        const GuidesAnimationTimingFunction = 'linear';
+        const GuidesAnimationIterationCount = 'infinite';
+        const GuidesAnimationDirection = 'alternate';
+        GuidesSlider.style.animation = `GuidesScroll ${GuidesAnimationDuration} ${GuidesAnimationTimingFunction} ${GuidesAnimationIterationCount} ${GuidesAnimationDirection}`;
+    }
+
+
+    useEffect(() => {
+        const GuidesstyleSheet = document.styleSheets[0];
+        const GuidesKeyframes = `@keyframes GuidesScroll {
+            0% {
+                transform: translateX(0);
+            }
+        
+            100% {
+                transform: translateX(calc(-${document.querySelector('.contentDiv').scrollWidth}px));
+            }
+        }`;
+
+        GuidesstyleSheet.insertRule(GuidesKeyframes);
+    }, [])
+
+    useEffect(() => {
+        ApplyGuidesAnimation();
+    }, []
+    )
+
+
     function StopGuidesAnim() {
-        let slider = document.getElementById('GuidesSliderId');
-        if (slider.classList.contains('GuidesSlider')) {
-            slider.classList.remove('GuidesSlider');
+        let GuidesSlider = document.querySelector('#GuidesSliderId');
+        if (GuidesSlider.classList.contains('GuidesSlider')) {
+            GuidesSlider.classList.remove('GuidesSlider');
+            GuidesSlider.removeAttribute('style');
         }
     }
 
     return (
-        <div id='GuidesSliderId' className='GuidesSlider' onClick={StopGuidesAnim}>
+        <div id='GuidesSliderId' className='GuidesSlider' onClick={StopGuidesAnim} ref={GuidesComponents}>
             {
                 GuidesDetails.map(
                     (item, i) => (

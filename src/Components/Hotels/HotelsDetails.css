@@ -96,16 +96,6 @@
     animation: HotelsScroll 6s linear infinite alternate;
 }
 
-@keyframes HotelsScroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-250px * 1));
-    }
-}
-
 @media (max-width:920px) {
     .HotelsDetailsDiv {
         width: 36%;

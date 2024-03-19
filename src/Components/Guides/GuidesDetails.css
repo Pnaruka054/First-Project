@@ -96,20 +96,6 @@
     text-shadow: 0 0 2px rgb(114, 114, 114);
 }
 
-.GuidesSlider {
-    animation: GuidesScroll 6s linear infinite alternate;
-}
-
-@keyframes GuidesScroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-250px * 4));
-    }
-}
-
 @media (max-width:920px) {
     .GuidesDetailsDiv {
         width: 45%;

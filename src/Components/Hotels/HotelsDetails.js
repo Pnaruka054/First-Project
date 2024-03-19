@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import './HotelsDetails.css'
 
 function HotelsDetails() {
@@ -36,15 +37,48 @@ function HotelsDetails() {
         },
     ]
 
+    let HotelsComponents = useRef(null)
+
+    function ApplyHotelsAnimation() {
+        const HotelsSlider = document.querySelector('.HotelsSlider');
+        const HotelsAnimationDuration = `${HotelsComponents.current.children.length * 2}s`;
+        const HotelsAnimationTimingFunction = 'linear';
+        const HotelsAnimationIterationCount = 'infinite';
+        const HotelsAnimationDirection = 'alternate';
+        HotelsSlider.style.animation = `HotelsScroll ${HotelsAnimationDuration} ${HotelsAnimationTimingFunction} ${HotelsAnimationIterationCount} ${HotelsAnimationDirection}`;
+    }
+
+
+    useEffect(() => {
+        const HotelsstyleSheet = document.styleSheets[0];
+        const HotelsKeyframes = `@keyframes HotelsScroll {
+            0% {
+                transform: translateX(0);
+            }
+        
+            100% {
+                transform: translateX(calc(-${document.querySelector('.contentDiv').scrollWidth}px + 100vw));
+            }
+        }`;
+
+        HotelsstyleSheet.insertRule(HotelsKeyframes);
+    }, [])
+
+    useEffect(() => {
+        ApplyHotelsAnimation();
+    }, []
+    )
+
     function StopHotelsAnim() {
-        let slider = document.getElementById('HotelsSliderId');
-        if (slider.classList.contains('HotelsSlider')) {
-            slider.classList.remove('HotelsSlider');
+        let HotelsSlider = document.querySelector('#HotelsSliderId');
+        if (HotelsSlider.classList.contains('HotelsSlider')) {
+            HotelsSlider.classList.remove('HotelsSlider');
+            HotelsSlider.removeAttribute('style');
         }
     }
 
     return (
-        <div id='HotelsSliderId' className='HotelsSlider' onClick={StopHotelsAnim}>
+        <div id='HotelsSliderId' className='HotelsSlider' onClick={StopHotelsAnim} ref={HotelsComponents}>
             {
                 HotelsDetails.map(
                     (item, i) => (

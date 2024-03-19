@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import './CarsDetails.css'
+import { useRef } from 'react';
 
 function CarsDetails() {
     const CarsDetails = [
@@ -48,18 +50,48 @@ function CarsDetails() {
             CarsMobileNumber: '9351585149'
         },
     ]
+    let CarsComponents = useRef(null)
 
-    let transformValue = 5
+    function ApplyCarsAnimation() {
+        const CarsSlider = document.querySelector('.CarsSlider');
+        const CarsAnimationDuration = `${CarsComponents.current.children.length * 2}s`;
+        const CarsAnimationTimingFunction = 'linear';
+        const CarsAnimationIterationCount = 'infinite';
+        const CarsAnimationDirection = 'alternate';
+        CarsSlider.style.animation = `CarsScroll ${CarsAnimationDuration} ${CarsAnimationTimingFunction} ${CarsAnimationIterationCount} ${CarsAnimationDirection}`;
+    }
+
+
+    useEffect(() => {
+        const CarsstyleSheet = document.styleSheets[0];
+        const CarsKeyframes = `@keyframes CarsScroll {
+            0% {
+                transform: translateX(0);
+            }
+        
+            100% {
+                transform: translateX(calc(-${document.querySelector('.contentDiv').scrollWidth}px + 100vw));
+            }
+        }`;
+
+        CarsstyleSheet.insertRule(CarsKeyframes);
+    }, [])
+
+    useEffect(() => {
+        ApplyCarsAnimation();
+    }, []
+    )
 
     function StopCarsAnim() {
-        let slider = document.getElementById('CarsSliderId');
-        if (slider.classList.contains('CarsSlider')) {
-            slider.classList.remove('CarsSlider');
+        let Carsslider = document.getElementById('CarsSliderId');
+        if (Carsslider.classList.contains('CarsSlider')) {
+            Carsslider.classList.remove('CarsSlider');
+            Carsslider.removeAttribute('style');
         }
     }
 
     return (
-        <div id='CarsSliderId' className='CarsSlider' onClick={StopCarsAnim} >
+        <div id='CarsSliderId' className='CarsSlider' onClick={StopCarsAnim} ref={CarsComponents}>
             {
                 CarsDetails.map(
                     (item, i) => (
