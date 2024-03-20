@@ -55,17 +55,15 @@ function GuidesDetails() {
 
     let GuidesComponents = useRef(null)
 
-    function ApplyGuidesAnimation() {
-        const GuidesSlider = document.querySelector('.GuidesSlider');
-        const GuidesAnimationDuration = `${GuidesComponents.current.children.length * 2 }s`;
-        const GuidesAnimationTimingFunction = 'linear';
-        const GuidesAnimationIterationCount = 'infinite';
-        const GuidesAnimationDirection = 'alternate';
-        GuidesSlider.style.animation = `GuidesScroll ${GuidesAnimationDuration} ${GuidesAnimationTimingFunction} ${GuidesAnimationIterationCount} ${GuidesAnimationDirection}`;
-    }
-
-
     useEffect(() => {
+        function ApplyGuidesAnimation() {
+            const GuidesSlider = document.querySelector('.GuidesSlider');
+            const GuidesAnimationDuration = `${GuidesComponents.current.children.length * 2 }s`;
+            const GuidesAnimationTimingFunction = 'linear';
+            const GuidesAnimationIterationCount = 'infinite';
+            const GuidesAnimationDirection = 'alternate';
+            GuidesSlider.style.animation = `GuidesScroll ${GuidesAnimationDuration} ${GuidesAnimationTimingFunction} ${GuidesAnimationIterationCount} ${GuidesAnimationDirection}`;
+        }
         const GuidesstyleSheet = document.styleSheets[0];
         const GuidesKeyframes = `@keyframes GuidesScroll {
             0% {
@@ -77,13 +75,9 @@ function GuidesDetails() {
             }
         }`;
 
+        ApplyGuidesAnimation();
         GuidesstyleSheet.insertRule(GuidesKeyframes);
     }, [])
-
-    useEffect(() => {
-        ApplyGuidesAnimation();
-    }, []
-    )
 
 
     function StopGuidesAnim() {

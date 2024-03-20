@@ -50,20 +50,18 @@ function CarsDetails() {
             CarsMobileNumber: '9351585149'
         },
     ]
-    
+
     let CarsComponents = useRef(null)
 
-    function ApplyCarsAnimation() {
-        const CarsSlider = document.querySelector('.CarsSlider');
-        const CarsAnimationDuration = `${CarsComponents.current.children.length * 2}s`;
-        const CarsAnimationTimingFunction = 'linear';
-        const CarsAnimationIterationCount = 'infinite';
-        const CarsAnimationDirection = 'alternate';
-        CarsSlider.style.animation = `CarsScroll ${CarsAnimationDuration} ${CarsAnimationTimingFunction} ${CarsAnimationIterationCount} ${CarsAnimationDirection}`;
-    }
-
-
     useEffect(() => {
+        function ApplyCarsAnimation() {
+            const CarsSlider = document.querySelector('.CarsSlider');
+            const CarsAnimationDuration = `${CarsComponents.current.children.length * 2}s`;
+            const CarsAnimationTimingFunction = 'linear';
+            const CarsAnimationIterationCount = 'infinite';
+            const CarsAnimationDirection = 'alternate';
+            CarsSlider.style.animation = `CarsScroll ${CarsAnimationDuration} ${CarsAnimationTimingFunction} ${CarsAnimationIterationCount} ${CarsAnimationDirection}`;
+        }
         const CarsstyleSheet = document.styleSheets[0];
         const CarsKeyframes = `@keyframes CarsScroll {
             0% {
@@ -76,12 +74,8 @@ function CarsDetails() {
         }`;
 
         CarsstyleSheet.insertRule(CarsKeyframes);
-    }, [])
-
-    useEffect(() => {
         ApplyCarsAnimation();
-    }, []
-    )
+    }, [])
 
     function StopCarsAnim() {
         let Carsslider = document.getElementById('CarsSliderId');

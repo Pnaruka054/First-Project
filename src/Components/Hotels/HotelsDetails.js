@@ -39,17 +39,15 @@ function HotelsDetails() {
 
     let HotelsComponents = useRef(null)
 
-    function ApplyHotelsAnimation() {
-        const HotelsSlider = document.querySelector('.HotelsSlider');
-        const HotelsAnimationDuration = `${HotelsComponents.current.children.length * 2}s`;
-        const HotelsAnimationTimingFunction = 'linear';
-        const HotelsAnimationIterationCount = 'infinite';
-        const HotelsAnimationDirection = 'alternate';
-        HotelsSlider.style.animation = `HotelsScroll ${HotelsAnimationDuration} ${HotelsAnimationTimingFunction} ${HotelsAnimationIterationCount} ${HotelsAnimationDirection}`;
-    }
-
-
     useEffect(() => {
+        function ApplyHotelsAnimation() {
+            const HotelsSlider = document.querySelector('.HotelsSlider');
+            const HotelsAnimationDuration = `${HotelsComponents.current.children.length * 2}s`;
+            const HotelsAnimationTimingFunction = 'linear';
+            const HotelsAnimationIterationCount = 'infinite';
+            const HotelsAnimationDirection = 'alternate';
+            HotelsSlider.style.animation = `HotelsScroll ${HotelsAnimationDuration} ${HotelsAnimationTimingFunction} ${HotelsAnimationIterationCount} ${HotelsAnimationDirection}`;
+        }
         const HotelsstyleSheet = document.styleSheets[0];
         const HotelsKeyframes = `@keyframes HotelsScroll {
             0% {
@@ -61,13 +59,9 @@ function HotelsDetails() {
             }
         }`;
 
+        ApplyHotelsAnimation();
         HotelsstyleSheet.insertRule(HotelsKeyframes);
     }, [])
-
-    useEffect(() => {
-        ApplyHotelsAnimation();
-    }, []
-    )
 
     function StopHotelsAnim() {
         let HotelsSlider = document.querySelector('#HotelsSliderId');
