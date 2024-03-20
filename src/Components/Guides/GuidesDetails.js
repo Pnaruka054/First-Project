@@ -64,7 +64,7 @@ function GuidesDetails() {
             const GuidesAnimationDirection = 'alternate';
             GuidesSlider.style.animation = `GuidesScroll ${GuidesAnimationDuration} ${GuidesAnimationTimingFunction} ${GuidesAnimationIterationCount} ${GuidesAnimationDirection}`;
         }
-        const GuidesstyleSheet = document.styleSheets[0];
+
         const GuidesKeyframes = `@keyframes GuidesScroll {
             0% {
                 transform: translateX(0);
@@ -75,8 +75,11 @@ function GuidesDetails() {
             }
         }`;
 
+        const StyleSheet = document.createElement('style');
+        StyleSheet.appendChild(document.createTextNode(GuidesKeyframes));
+        document.head.appendChild(StyleSheet);
+
         ApplyGuidesAnimation();
-        GuidesstyleSheet.insertRule(GuidesKeyframes);
     }, [])
 
 

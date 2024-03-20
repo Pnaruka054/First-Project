@@ -62,7 +62,7 @@ function CarsDetails() {
             const CarsAnimationDirection = 'alternate';
             CarsSlider.style.animation = `CarsScroll ${CarsAnimationDuration} ${CarsAnimationTimingFunction} ${CarsAnimationIterationCount} ${CarsAnimationDirection}`;
         }
-        const CarsstyleSheet = document.styleSheets[0];
+
         const CarsKeyframes = `@keyframes CarsScroll {
             0% {
                 transform: translateX(0);
@@ -73,7 +73,10 @@ function CarsDetails() {
             }
         }`;
 
-        CarsstyleSheet.insertRule(CarsKeyframes);
+        const StyleSheet = document.createElement('style');
+        StyleSheet.appendChild(document.createTextNode(CarsKeyframes));
+        document.head.appendChild(StyleSheet);
+
         ApplyCarsAnimation();
     }, [])
 

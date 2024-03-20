@@ -48,7 +48,7 @@ function HotelsDetails() {
             const HotelsAnimationDirection = 'alternate';
             HotelsSlider.style.animation = `HotelsScroll ${HotelsAnimationDuration} ${HotelsAnimationTimingFunction} ${HotelsAnimationIterationCount} ${HotelsAnimationDirection}`;
         }
-        const HotelsstyleSheet = document.styleSheets[0];
+
         const HotelsKeyframes = `@keyframes HotelsScroll {
             0% {
                 transform: translateX(0);
@@ -59,8 +59,11 @@ function HotelsDetails() {
             }
         }`;
 
+        const StyleSheet = document.createElement('style');
+        StyleSheet.appendChild(document.createTextNode(HotelsKeyframes));
+        document.head.appendChild(StyleSheet);
+
         ApplyHotelsAnimation();
-        HotelsstyleSheet.insertRule(HotelsKeyframes);
     }, [])
 
     function StopHotelsAnim() {
