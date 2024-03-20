@@ -50,6 +50,7 @@ function CarsDetails() {
             CarsMobileNumber: '9351585149'
         },
     ]
+    
     let CarsComponents = useRef(null)
 
     function ApplyCarsAnimation() {
