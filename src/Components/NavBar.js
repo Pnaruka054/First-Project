@@ -9,9 +9,9 @@ function NavBar() {
                 </div>
                 <div className='NavBarUlliDiv'>
                     <ul>
-                        <li><a href='#Hotels'>Hotals</a></li>
+                        <li><a href='#Hotels'>Hotels</a></li>
                         <li><a href='#Cars'>Cars</a></li>
-                        <li><a href='#Guides'>Guids</a></li>
+                        <li><a href='#Guides'>Guides</a></li>
                     </ul>
                 </div>
                 <div className='NavBarCallEmail'>
